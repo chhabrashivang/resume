@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/home/shivang/Desktop/Resume_Project/Resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <title>RESUME</title>
+
+    <script>
+        let activeSection = "";
+        const handleActiveSection = (section) => {
+            activeSection = section;
+            for(let i=0; i<5; i++) {
+                document.getElementsByClassName('details')[i].style.color = "rgba(255,255,255,0.5)";
+            }
+            document.getElementById(activeSection).style.color = "white";
+        }
+    </script>
+</head>
+<body>
+    <div class="photo-details">
+        <img class="photo" src="/home/shivang/Desktop/Resume_Project/photo.png" alt="image">
+        <a class="details" href="#ABOUT ME" id="about" onclick="handleActiveSection('about')" style="color: white">ABOUT ME</a>
+        <a class="details" href="#EDUCATION" id="education" onclick="handleActiveSection('education')">EDUCATION</a>
+        <a class="details" href="#SKILLS" id="skills" onclick="handleActiveSection('skills')">SKILLS</a>
+        <a class="details" href="#PROJECTS" id="projects" onclick="handleActiveSection('projects')">PROJECTS</a>
+        <a class="details" href="#VOLUNTEERINGS" id="volunteerings" onclick="handleActiveSection('volunteerings')">VOLUNTEERINGS</a>
+    </div>
+    <div class="data">
+        <div class="data-details" id="ABOUT ME">
+            <p class="name">
+                <span class="light-color">SHIVANG</span>  <span class="dark-color">CHHABRA</span>
+            </p>
+            <p class="personal-info">
+                <span class="dark-color">3/118 GEETA COLONY</span> ~ <span class="light-color">DELHI 110031</span> ~ <span class="dark-color">INDIA</span> ~ <span class="light-color">+91 8384059540</span> ~ <span class="dark-color">shivangchhabraofficial@gmail.com</span>
+            </p>
+            <p class="about">
+                I am a first-year B.Tech Computer Science student deeply passionate about web development. Eager to translate my academic foundation into practical skills, I am driven by a curiosity to explore the intricacies of coding and design. My coursework has provided a solid understanding of programming languages, and I am enthusiastic about staying updated on the latest trends in the field.
+                
+                Beyond the classroom, I actively engage in hands-on projects to hone my skills and contribute to the dynamic world of web development. With a commitment to learning and a goal to create seamless digital experiences, I am excited to embark on this journey, bringing a fresh perspective and a strong foundation to collaborative endeavors in the realm of web development.
+            </p>
+            <div class="links"> 
+                <a class="icon-container" href="https://www.linkedin.com/in/shivang-chhabra-6a973328b" target="_blank">
+                    <i class="fa-brands fa-linkedin icons" style="color: #fafafa;"></i>
+                </a>
+                <a class="icon-container" href="https://github.com/chhabrashivang" target="_blank">
+                    <i class="fa-brands fa-github icons" style="color: rgb(221, 106, 81);"></i>
+                </a>
+                <a class="icon-container" href="mailto:shivangchhabraofficial@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope icons" style="color: #ffffff;"></i>
+                </a>
+                <a class="icon-container" href="https://wa.me/+918384059540" target="_blank">
+                    <i class="fa-brands fa-whatsapp icons" style="color:rgb(221, 106, 81);"></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="data-details" id="EDUCATION">
+            <p class="heading-type1">
+                EDUCATION
+            </p>
+            <div class="education-details">
+                <div class="institue-year">
+                    <p class="institue"><span class="dark-color">DELHI TECHNICAL CAMPUS</span> , <span class="light-color">GGSIPU</span>, <span class="dark-color">DELHI</span></p>
+                    <p class="year"><span class="dark-color">2023</span> ~ <span class="light-color">Present</span> </p>
+                </div>
+                <p class="degree">BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE <span class="light-color"></span></p>
+                <ul>
+                    <li class="degree-details">
+                        A Bachelor of Technology (B.Tech) in Computer Science is a popular undergraduate degree program that focuses on the principles and applications of computer science and technology. During the course, students delve into various facets of computing, including programming languages, algorithms, data structures, software engineering, database management, artificial intelligence, and networking.
+                    </li>   
+                </ul> 
+            </div>
+            <div class="education-details">
+                <div class="institue-year">
+                    <p class="institue"><span class="dark-color">ST. LAWRENCE CONVENT</span>, <span class="light-color">CBSE</span>, <span class="dark-color">DELHI</span></p>
+                    <p class="year"><span class="dark-color">2022</span> ~ <span class="light-color">2023</span></p>
+                </div>
+                <p class="degree">HSC: NON-MEDICAL <span class="light-color">(89.6%)</span></p>
+                <ul>
+                    <li>
+                        <p class="degree-details">HSC (Higher Secondary Certificate) in the non-medical stream is an important stage in the Indian education system. It is typically undertaken after the completion of grade 10 (SSC or CBSE) and marks the final two years of pre-university education. In the non-medical stream, students choose subjects such as Physics, Chemistry, Mathematics, English and Computer Science.</p>
+                    </li>   
+                </ul> 
+            </div>
+            <div class="education-details">
+                <div class="institue-year">
+                    <p class="institue"><span class="dark-color">ST. LAWRENCE CONVENT</span>, <span class="light-color">CBSE</span>, <span class="dark-color">DELHI</span></p>
+                    <p class="year"><span class="dark-color">2020</span> ~ <span class="light-color">2021</span></p>
+                </div>
+                <p class="degree">BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE <span class="light-color">(94.6%)</span></p>
+                <ul>
+                    <li>
+                        <p class="degree-details">SSC (Secondary School Certificate) and CBSE (Central Board of Secondary Education) are fundamental components of the Indian education system. SSC is a public examination conducted at the state level, usually at the end of grade 10, to assess students' knowledge and understanding of the prescribed curriculum. It is an essential milestone for students to progress to higher education or various vocational courses.</p>
+                    </li>   
+                </ul> 
+            </div>
+        </div>
+        <hr>
+        <div class="data-details skills" id="SKILLS">
+            <p class="heading-type2">
+                SKILLS
+            </p>
+            <p class="skills-subheading">
+                <span class="dark-color">DESIGN</span>  TECHNOLOGIES <span class="dark-color">&</span> TOOLS
+            </p>
+            <p class="skills-languages">
+                Html <span class="dark-color">~</span> CSS <span class="dark-color">~</span> C++ <span class="dark-color">~</span> JavaScript <span class="dark-color">~</span> Python
+            </p>
+            <p class="skills-subheading">
+                WORK <span class="dark-color">FLOW</span>
+            </p>
+            <div class="workflow">
+                <div class="workflow-content">
+                    <i class="fa-solid fa-check tick-mark"></i>
+                    <p class="workflow-lines">Get the product details from the client.
+                    </p>
+                </div>
+                <div class="workflow-content">
+                    <i class="fa-solid fa-check tick-mark"></i>
+                    <p class="workflow-lines">
+                        Develop & Design the Product.
+                    </p>
+                </div>
+                <div class="workflow-content">
+                    <i class="fa-solid fa-check tick-mark"></i>
+                    <p class="workflow-lines">
+                        Work arounds for in-change.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="data-details" id="PROJECTS">
+            <p class="heading-type1">
+                PROJECTS
+            </p>
+            <div class="project">
+                <div class="project-title">
+                    <p class="project-name">
+                        Currency Convertor
+                    </p>
+                    <p class="project-time-period">
+                        <span class="light-color">Sept 2023</span>  ~ <span class="dark-color">Oct 2023</span>
+                    </p>
+                </div>
+                <a class="project-link" href="https://chhabrashivang.github.io/" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                    <p class="link-url">
+                        https://chhabrashivang.github.io/ 
+                    </p>
+                </a>
+                <div class="project-details">
+                    <ul>
+                        <li class="project-description">
+                            The website serves as a user-friendly currency converter, allowing seamless and quick conversion between different currencies.
+                        </li>
+                        <li class="project-description">
+                            Featuring a clean and intuitive design, users can easily input their desired currencies and amounts, obtaining accurate real-time exchange rates.
+                        </li>
+                        <li class="project-description">
+                            Utilizing live data feeds, the currency converter ensures that users receive up-to-the-minute exchange rates, providing accurate and reliable information.
+                        </li>
+                        <li class="project-description">
+                            Supporting a wide range of currencies, the converter caters to diverse user needs, accommodating international transactions and travel requirements.
+                        </li>
+                        <li class="project-description">
+                            Accessible from various devices, the website prioritizes user convenience, offering a responsive design that adapts seamlessly to desktops, tablets, and mobile devices, making currency conversion hassle-free on the go.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    <p class="project-name">
+                        AMAZON ADMIN CLONE 
+                    </p>
+                    <p class="project-time-period">
+                        <span class="light-color">Aug 2023</span>  ~ <span class="dark-color">Sept 2023</span> 
+                    </p>
+                </div>
+                <a class="project-link" href="https://chhabrashivang.github.io/" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                    <p class="link-url">
+                        https://chhabrashivang.github.io/ 
+                    </p>
+                </a>
+                <div class="project-details">
+                    <ul>
+                        <li class="project-description">
+                            The Amazon Clone website that I created is a read-only replica of the popular e-commerce platform, Amazon.
+                        </li>
+                        <li class="project-description">
+                            With a user-friendly interface, this clone offers a seamless way for sellers and administrators to enter product details, including titles, descriptions, prices, and images
+                        </li>
+                        <li class="project-description">
+                            The platform ensures efficient categorization and tagging, making it easier for customers to find products.
+                        </li>
+                        <li class="project-description">
+                            With its intuitive design and emphasis on accuracy and efficiency, this clone serves as a valuable tool for e-commerce businesses to expand their product offerings and enhance the overall shopping experience for their customers.
+                        </li>
+                        <li class="project-description">
+                            With its intuitive design and emphasis on accuracy and efficiency, this clone serves as a valuable tool for e-commerce businesses to expand their product offerings and enhance the overall shopping experience for their customers.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    <p class="project-name">
+                        REGISTARTION FORM
+                    </p>
+                    <p class="project-time-period">
+                        <span class="light-color">July 2023</span>  ~ <span class="dark-color">Aug 2023</span>
+                    </p>
+                </div>
+                <a class="project-link" href="https://chhabrashivang.github.io/" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                    <p class="link-url">
+                        https://chhabrashivang.github.io/ 
+                    </p>
+                </a>
+                <div class="project-details">
+                    <ul>
+                        <li class="project-description">
+                            Our website features an intuitive and user-friendly registration form, streamlining the sign-up process for visitors with a seamless and straightforward interface.
+                        </li>
+                        <li class="project-description">
+                            The registration form is designed to efficiently collect essential user information while minimizing redundancy, ensuring a smooth and time-effective experience for users.
+                        </li>
+                        <li class="project-description">
+                            Accessible across various devices, the registration form is optimized for desktops, tablets, and mobile phones, providing a consistent and convenient registration experience for users regardless of their preferred device.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="data-details" id="VOLUNTEERINGS">
+            <p class="heading-type2">
+                VOLUNTEERINGS
+            </p>
+            <div class="volunteering">
+                <div class="volunteering-title">
+                    <p class="volunteering-group-name">
+                        <span class="light-color">GDSC -</span>  <span class="dark-color">WEB DEVELOPMENT ASSOCIATE</span> 
+                    </p>
+                    <p class="volunteering-time-period">
+                        <span class="light-color">Sept 2022</span>  ~ <span class="dark-color">Present</span>
+                    </p>
+                </div>
+                <div class="volunteering-detail">
+                    <ul>
+                        <li>
+                            As the Web Development Associate of the Google Developer Student Club (GDSC) during my first year of college, I am working with a team of aspiring developers in creating impactful web-based projects and fostering a vibrant tech community on campus.
+                        </li>
+                        <li>
+                            With a passion for web development and a drive to inspire others, I am organizing workshops, hackathons, and seminars to impart practical skills and industry insights to fellow students.
+                        </li>
+                        <li>
+                            Collaborating with my team, I am executing various web development projects, leveraging modern technologies and frameworks to create innovative solutions.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="volunteering">
+                <div class="volunteering-title">
+                    <p class="volunteering-group-name">
+                        <span class="light-color">ST. LAWRENCE CONVENT SCHOOL -</span>  <span class="dark-color">PREFECT</span> 
+                    </p>
+                    <p class="volunteering-time-period">
+                        <span class="light-color">Mar 2022</span>  ~ <span class="dark-color">Feb 2023</span>
+                    </p>
+                </div>
+                <div class="volunteering-detail">
+                    <ul>
+                        <li>
+                            Held the prestigious position of Prefect, demonstrating exceptional leadership skills and a commitment to the school community.
+                        </li>
+                        <li>
+                            Acted as a representative and advocate for the student body, bridging communication between students and school administration.
+                        </li>
+                        <li>
+                            Provided mentorship and support to fellow students, fostering a positive and inclusive environment within the school.
+                        </li>
+                        <li>
+                            Developed strong public speaking and communication skills through addressing the student body, parents, and staff during various events and meetings.
+                        </li>
+                        <li>
+                            Served as a role model for peers, embodying qualities of responsibility, integrity, and dedication in both academic and extracurricular pursuits.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
